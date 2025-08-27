@@ -8,16 +8,17 @@ const call = function(){
 const coins = function(name, number){
     const coinTake = document.getElementById("coins");
     const totalCoin = parseInt(coinTake.innerText);
-    if(totalCoin > 20){
+    if(totalCoin >= 20){
         alert(`📞 Calling ${name} ${number} ...`);
         const presentCoin = totalCoin - 20;
         coinTake.innerText = presentCoin;
+        history(name, number);
     }
     else{
         alert(`❌ You do not have enough coin. You need 20 coins for call`);
     }
-    
-    history(name, number);
+
+    // history(name, number); if I gave it here not work else. 
 };
 
 const history = function(name, number){
