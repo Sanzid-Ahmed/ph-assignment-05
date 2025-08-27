@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav class="flex justify-between py-[24px] px-[60px] max-[500px]:p-0 items-center">
-            <div class="logo-name flex gap-1 max-[300px]:hidden ">
+            <div class="logo-name flex gap-1 max-[375px]:hidden">
                 <img src="assets/logo.png" alt="" class="max-w-[50px] max-[500px]:max-w-[40px] max-h-[50px] max-[500px]:max-h-[40px]">
                 <h1 class="font-bold text-[#006747] max-[500px]:text-[12px]">Emergency <br>Service</h1>
             </div>
@@ -47,11 +47,11 @@
 
     <main class="bg-[#41FF6B30] min-h-[100vh] py-15">
         <div class="flex">
-             <button class="btn btn-success hidden max-[500px]:inline max-[500px]: max-[500px]:mx-auto mb-10"><i class="fa-solid fa-clock"></i><span> Call History</span></button>
-             <button class="btn btn-success hidden max-[500px]:inline max-[500px]:w-4/12 max-[500px]:mx-auto mb-10">Services</button>
+             <button id="history-sec-btn" class="btn btn-success hidden max-[500px]:inline max-[500px]: max-[500px]:mx-auto mb-10"><i class="fa-solid fa-clock"></i><span> Call History</span></button>
+             <button id="service-sec-btn" class="btn btn-success hidden max-[500px]:inline max-[500px]:w-4/12 max-[500px]:mx-auto mb-10">Services</button>
         </div>    
-        <div class="w-11/12 mx-auto grid grid-cols-4 gap-[30px] max-[500px]:grid-col-2">
-            <section
+        <div class="w-11/12 mx-auto grid grid-cols-4 gap-[30px] max-[500px]:grid-cols-2">
+            <section id="service-sec"
                 class="col-span-3 grid grid-cols-3 grid-rows-3 gap-[30px] max-[853px]:col-span-4 max-[853px]:grid-cols-2 max-[853px]:grid-rows-5">
                 <!-- Card Number 01 -->
                 <div class="service p-4 bg-white rounded-[15px]">
@@ -271,7 +271,7 @@
 
                 <!-- Card Number 09 -->
                 <div
-                    class="service p-4 bg-white rounded-[15px] max-[853px]:col-span-2 max-[853px]:w-1/2 max-[853px]:mx-auto">
+                    class="service p-4 bg-white rounded-[15px]">
                     <div class="image-hart flex justify-between items-center rounded-[12px] mb-3">
                         <div class="bg-[#FFE3E2] rounded-[16px] w-[60px] h-[60px] flex justify-center items-center">
                             <img src="assets/emergency.png" alt="" class="w-[32px]">
@@ -298,7 +298,7 @@
                 </div>
             </section>
 
-            <section class="col-span-1 p-[24px] bg-white rounded-[12px] max-[853px]:col-span-2 max-[500px]:hidden">
+            <section id="history-sec" class="col-span-1 p-[24px] bg-white rounded-[12px] max-[500px]:col-span-2 max-[500px]:hidden">
                 <div class="call-history-head flex justify-between items-center mb-[16px]">
                     <p class="font-bold"><i class="fa-solid fa-clock"></i><span> Call History</span></p>
                     <button id="history-button"
@@ -320,7 +320,7 @@
     <script src="script/HeartIcons.js"></script>
     <script src="script/call.js"></script>
     <script src="script/historyButton.js"></script>
-    <script src="script/nav.js"></script>
+    <script src="script/main.js"></script>
 </body>
 
 </html>
