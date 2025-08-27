@@ -14,29 +14,30 @@
 
 <body>
     <header>
-        <nav class="flex justify-between py-[24px] px-[60px]">
-            <div class="logo-name flex gap-1">
-                <img src="assets/logo.png" alt="" class="max-w-[50px] max-h-[50px]">
-                <h1 class="font-bold text-[#006747]">Emergency <br>Service</h1>
+        <nav class="flex justify-between py-[24px] px-[60px] max-[500px]:p-0 items-center">
+            <div class="logo-name flex gap-1 max-[300px]:hidden ">
+                <img src="assets/logo.png" alt="" class="max-w-[50px] max-[500px]:max-w-[40px] max-h-[50px] max-[500px]:max-h-[40px]">
+                <h1 class="font-bold text-[#006747] max-[500px]:text-[12px]">Emergency <br>Service</h1>
             </div>
-            <div class="heart-coin-copy flex gap-[20px]">
+            <div class="heart-coin-copy flex gap-[20px] max-[300px]:w-full max-[500px]:gap-0">
                 <div
-                    class="min-w-[123px] flex p-[12px] rounded-[50px] bg-[#41FF6B30] gap-[10px] justify-center items-center">
+                    class="max-[500px]:min-w-[90px] max-[500px]:rounded-[0] max-[500px]:bg-white min-w-[123px] flex p-[12px] rounded-[50px] bg-[#41FF6B30] gap-[10px] max-[500px]:gap-[5px] justify-center items-center max-[300px]:rounded-[0]">
                     <p id="heart-count" class="font-bold text-[20px]">0</p>
                     <img src="assets/heart.png" alt="" class="max-w-[25px] max-h-[25px]">
                 </div>
                 <div
-                    class="min-w-[123px] flex p-[12px] rounded-[50px] bg-[#41FF6B30] gap-[10px] justify-center items-center">
+                    class="max-[500px]:min-w-[90px] max-[500px]:rounded-[0] max-[500px]:bg-white min-w-[123px] flex p-[12px] rounded-[50px] bg-[#41FF6B30] gap-[10px] max-[500px]:gap-[5px] justify-center items-center max-[300px]:rounded-[0]">
                     <p id="coins" class="font-bold text-[20px]">100</p>
                     <img src="assets/coin.png" alt="" class="max-w-[25px] max-h-[25px]">
                 </div>
-                <div class="min-w-[123px] flex p-[12px] rounded-[50px] bg-[#00A63E] gap-[10px] justify-center items-center">
-                    <p class="font-bold text-[16px] text-white"><span>2</span> Copy</p>
+                <div
+                    class="max-[500px]:min-w-[90px] max-[500px]:rounded-[0] max-[500px]:bg-white min-w-[123px] flex p-[12px] rounded-[50px] bg-[#00A63E] gap-[10px] max-[500px]:gap-[5px] justify-center items-center max-[300px]:rounded-[0]">
+                    <p class="font-bold text-[16px] text-white max-[500px]:text-black"><span>0</span> Copy</p>
                 </div>
             </div>
         </nav>
         <div
-            class="banner bg-gradient-to-r from-[#013223] via-[#01a772] to-[#013223] py-[12px] px-[60px] flex items-center flex-col gap-[11px]">
+            class="banner bg-gradient-to-r from-[#013223] via-[#01a772] to-[#013223] py-[12px] px-[60px] flex items-center flex-col gap-[11px] text-center">
             <img src="assets/logo-dark.png" alt="" class="w-[92px]">
             <h1 class="font-bold text-[40px] text-white">Emergency Service Directory</h1>
             <p class="font-semibold text-[20px] text-white">Government Emergency Services at Your Fingertip – A Project
@@ -45,8 +46,13 @@
     </header>
 
     <main class="bg-[#41FF6B30] min-h-[100vh] py-15">
-        <div class="w-11/12 mx-auto grid grid-cols-4 gap-[30px]">
-            <section class="col-span-3 grid grid-cols-3 grid-rows-3 gap-[30px]">
+        <div class="flex">
+             <button class="btn btn-success hidden max-[500px]:inline max-[500px]: max-[500px]:mx-auto mb-10"><i class="fa-solid fa-clock"></i><span> Call History</span></button>
+             <button class="btn btn-success hidden max-[500px]:inline max-[500px]:w-4/12 max-[500px]:mx-auto mb-10">Services</button>
+        </div>    
+        <div class="w-11/12 mx-auto grid grid-cols-4 gap-[30px] max-[500px]:grid-col-2">
+            <section
+                class="col-span-3 grid grid-cols-3 grid-rows-3 gap-[30px] max-[853px]:col-span-4 max-[853px]:grid-cols-2 max-[853px]:grid-rows-5">
                 <!-- Card Number 01 -->
                 <div class="service p-4 bg-white rounded-[15px]">
                     <div class="image-hart flex justify-between items-center rounded-[12px] mb-3">
@@ -66,8 +72,10 @@
                         </div>
 
                         <div class="button grid grid-cols-2 gap-3">
-                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i class="fa-solid fa-phone"></i>Call</button>
-                            <button class="btn btn-success bg-[#00A63E] text-white"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-success bg-[#00A63E] text-white"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
                         </div>
                     </div>
                 </div>
@@ -91,8 +99,10 @@
                         </div>
 
                         <div class="button grid grid-cols-2 gap-3">
-                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i class="fa-solid fa-phone"></i>Call</button>
-                            <button class="btn btn-success bg-[#00A63E] text-white"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-success bg-[#00A63E] text-white"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
                         </div>
                     </div>
                 </div>
@@ -116,8 +126,10 @@
                         </div>
 
                         <div class="button grid grid-cols-2 gap-3">
-                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i class="fa-solid fa-phone"></i>Call</button>
-                            <button class="btn btn-success bg-[#00A63E] text-white"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-success bg-[#00A63E] text-white"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
                         </div>
                     </div>
                 </div>
@@ -141,8 +153,10 @@
                         </div>
 
                         <div class="button grid grid-cols-2 gap-3">
-                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i class="fa-solid fa-phone"></i>Call</button>
-                            <button class="btn btn-success bg-[#00A63E] text-white"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-success bg-[#00A63E] text-white"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
                         </div>
                     </div>
                 </div>
@@ -166,8 +180,10 @@
                         </div>
 
                         <div class="button grid grid-cols-2 gap-3">
-                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i class="fa-solid fa-phone"></i>Call</button>
-                            <button class="btn btn-success bg-[#00A63E] text-white"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-success bg-[#00A63E] text-white"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
                         </div>
                     </div>
                 </div>
@@ -191,8 +207,10 @@
                         </div>
 
                         <div class="button grid grid-cols-2 gap-3">
-                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i class="fa-solid fa-phone"></i>Call</button>
-                            <button class="btn btn-success bg-[#00A63E] text-white"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-success bg-[#00A63E] text-white"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
                         </div>
                     </div>
                 </div>
@@ -216,8 +234,10 @@
                         </div>
 
                         <div class="button grid grid-cols-2 gap-3">
-                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i class="fa-solid fa-phone"></i>Call</button>
-                            <button class="btn btn-success bg-[#00A63E] text-white"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-success bg-[#00A63E] text-white"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
                         </div>
                     </div>
                 </div>
@@ -241,14 +261,17 @@
                         </div>
 
                         <div class="button grid grid-cols-2 gap-3">
-                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i class="fa-solid fa-phone"></i>Call</button>
-                            <button class="btn btn-success bg-[#00A63E] text-white"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-success bg-[#00A63E] text-white"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card Number 09 -->
-                <div class="service p-4 bg-white rounded-[15px]">
+                <div
+                    class="service p-4 bg-white rounded-[15px] max-[853px]:col-span-2 max-[853px]:w-1/2 max-[853px]:mx-auto">
                     <div class="image-hart flex justify-between items-center rounded-[12px] mb-3">
                         <div class="bg-[#FFE3E2] rounded-[16px] w-[60px] h-[60px] flex justify-center items-center">
                             <img src="assets/emergency.png" alt="" class="w-[32px]">
@@ -266,17 +289,20 @@
                         </div>
 
                         <div class="button grid grid-cols-2 gap-3">
-                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i class="fa-solid fa-phone"></i>Call</button>
-                            <button class="btn btn-success bg-[#00A63E] text-white"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button class="btn btn-outline call-btn border-gray-300 text-gray-500"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-success bg-[#00A63E] text-white"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="col-span-1 p-[24px] bg-white rounded-[12px]">
+            <section class="col-span-1 p-[24px] bg-white rounded-[12px] max-[853px]:col-span-2 max-[500px]:hidden">
                 <div class="call-history-head flex justify-between items-center mb-[16px]">
                     <p class="font-bold"><i class="fa-solid fa-clock"></i><span> Call History</span></p>
-                    <button id="history-button" class="btn btn-success rounded-[50px] bg-[#00A63E] text-white font-bold">Clear</button>
+                    <button id="history-button"
+                        class="btn btn-success rounded-[50px] bg-[#00A63E] text-white font-bold">Clear</button>
                 </div>
                 <div id="history-container">
                     <!-- for see how it looks like!! -->
@@ -294,6 +320,7 @@
     <script src="script/HeartIcons.js"></script>
     <script src="script/call.js"></script>
     <script src="script/historyButton.js"></script>
+    <script src="script/nav.js"></script>
 </body>
 
 </html>
