@@ -39,7 +39,7 @@ const history = function(name, number){
     `;
 
     historyContainer.appendChild(historyDiv);
-}
+};
 
 document.querySelectorAll(".call-btn")
 .forEach((button) => {
