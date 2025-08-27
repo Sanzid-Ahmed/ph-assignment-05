@@ -14,12 +14,12 @@
 
 <body>
     <header>
-        <nav class="flex justify-between py-[24px] px-[60px] max-[500px]:p-0 items-center">
+        <nav class="flex justify-between items-center py-[24px] max-[500px]:p-0 max-[850px]:px-0 px-[60px]">
             <div class="logo-name flex gap-1 max-[375px]:hidden">
                 <img src="assets/logo.png" alt="" class="max-w-[50px] max-[500px]:max-w-[40px] max-h-[50px] max-[500px]:max-h-[40px]">
                 <h1 class="font-bold text-[#006747] max-[500px]:text-[12px]">Emergency <br>Service</h1>
             </div>
-            <div class="heart-coin-copy flex gap-[20px] max-[300px]:w-full max-[500px]:gap-0">
+            <div class="heart-coin-copy flex gap-[20px] max-[300px]:w-full max-[500px]:gap-0 max-[800px]:gap-[10px]">
                 <div
                     class="max-[500px]:min-w-[90px] max-[500px]:rounded-[0] max-[500px]:bg-white min-w-[123px] flex p-[12px] rounded-[50px] bg-[#41FF6B30] gap-[10px] max-[500px]:gap-[5px] justify-center items-center max-[300px]:rounded-[0]">
                     <p id="heart-count" class="font-bold text-[20px]">0</p>
@@ -47,12 +47,11 @@
 
     <main class="bg-[#41FF6B30] min-h-[100vh] py-15">
         <div class="flex">
-             <button id="history-sec-btn" class="btn btn-success hidden max-[500px]:inline max-[500px]: max-[500px]:mx-auto mb-10"><i class="fa-solid fa-clock"></i><span> Call History</span></button>
-             <button id="service-sec-btn" class="btn btn-success hidden max-[500px]:inline max-[500px]:w-4/12 max-[500px]:mx-auto mb-10">Services</button>
+             <button id="history-sec-btn" class="btn btn-success hidden w-[40%] max-[500px]:inline max-[500px]:mx-auto mb-10"><i class="fa-solid fa-clock"></i><span> Call History</span></button>
+             <button id="service-sec-btn" class="btn btn-success hidden w-[40%] max-[500px]:inline max-[500px]:mx-auto mb-10">Services</button>
         </div>    
-        <div class="w-11/12 mx-auto grid grid-cols-4 gap-[30px] max-[500px]:grid-cols-2">
-            <section id="service-sec"
-                class="col-span-3 grid grid-cols-3 grid-rows-3 gap-[30px] max-[853px]:col-span-4 max-[853px]:grid-cols-2 max-[853px]:grid-rows-5">
+        <div class="w-11/12 mx-auto grid grid-cols-4 max-[1100px]:grid-cols-3 max-[800px]:grid-cols-2 max-[500px]:grid-cols-1 gap-[30px] max-[800]:gap-0">
+            <section id="service-sec" class="col-span-3 grid grid-cols-3 max-[1100px]:col-span-2 max-[1100px]:grid-cols-2 max-[800px]:col-span-1 max-[800px]:grid-cols-1 max-[500px]:col-span-1 max-[500px]:grid-cols-1 gap-[30px] max-[800]:gap-0">
                 <!-- Card Number 01 -->
                 <div class="service p-4 bg-white rounded-[15px]">
                     <div class="image-hart flex justify-between items-center rounded-[12px] mb-3">
@@ -246,7 +245,7 @@
                 <div class="service p-4 bg-white rounded-[15px]">
                     <div class="image-hart flex justify-between items-center rounded-[12px] mb-3">
                         <div class="bg-[#FFE3E2] rounded-[16px] w-[60px] h-[60px] flex justify-center items-center">
-                            <img src="assets/emergency.png" alt="" class="w-[32px]">
+                            <img src="assets/brac.png" alt="" class="w-[32px]">
                         </div>
                         <img src="assets/heart-no-color.png" alt="" class="w-[24px] N-heart">
                     </div>
@@ -271,10 +270,10 @@
 
                 <!-- Card Number 09 -->
                 <div
-                    class="service p-4 bg-white rounded-[15px]">
+                    class="service p-4 bg-white rounded-[15px] max-[1100px]:col-span-2 max-[1100px]:w-1/2 max-[1100px]:mx-auto max-[800px]:col-span-1 max-[800px]:w-full max-[800px]:mx-auto">
                     <div class="image-hart flex justify-between items-center rounded-[12px] mb-3">
                         <div class="bg-[#FFE3E2] rounded-[16px] w-[60px] h-[60px] flex justify-center items-center">
-                            <img src="assets/emergency.png" alt="" class="w-[32px]">
+                            <img src="assets/Bangladesh-Railway.png" alt="" class="w-[32px]">
                         </div>
                         <img src="assets/heart-no-color.png" alt="" class="w-[24px] N-heart">
                     </div>
@@ -298,7 +297,7 @@
                 </div>
             </section>
 
-            <section id="history-sec" class="col-span-1 p-[24px] bg-white rounded-[12px] max-[500px]:col-span-2 max-[500px]:hidden">
+            <section id="history-sec" class="col-span-1 p-[24px] bg-white rounded-[12px] max-[500px]:hidden">
                 <div class="call-history-head flex justify-between items-center mb-[16px]">
                     <p class="font-bold"><i class="fa-solid fa-clock"></i><span> Call History</span></p>
                     <button id="history-button"
@@ -316,6 +315,8 @@
                 </div>
             </section>
         </div>
+
+        
     </main>
     <script src="script/HeartIcons.js"></script>
     <script src="script/call.js"></script>
