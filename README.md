@@ -12,4 +12,6 @@
 -- Example:     const container = document.getElementById("container");
                 container.appendChild(newDiv);
 
-## 
+## What is Event Bubbling and how does it work?
+- Event Bubbling is a type of event propagation in the DOM where an event starts at the deepest target element and then bubbles up to its parent elements, all the way to the document root. (used google for definition).
+
