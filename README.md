@@ -23,4 +23,6 @@
 - Works for Dynamic Elements. 
 (take help from google). 
 
-## 
+## What is the difference between preventDefault() and stopPropagation() methods?
+- preventDefault() = Stops the default behavior of an element. Like = form reload. 
+- stopPropagation() = Stops the event from bubbling. 
